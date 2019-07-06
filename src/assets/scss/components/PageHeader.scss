@@ -1,0 +1,28 @@
+@import "../variables.scss";
+.page-header{
+  background-color: $bgBlueColor;
+  padding: 10px 15px;
+}
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.web-title{
+  font-size: $bigTitleSize;
+  font-style: italic;
+  color: white;
+}
+.user-info{
+  display: flex;
+  align-items: center;
+}
+.user-avatar{
+  height: 34px;
+}
+.user-name{
+  display: inline-block;
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
