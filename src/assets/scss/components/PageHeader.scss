@@ -1,7 +1,7 @@
 @import "../variables.scss";
 .page-header{
   background-color: $bgBlueColor;
-  padding: 10px 15px;
+  padding: 0 15px;
 }
 .wrapper{
   display: flex;
@@ -11,18 +11,5 @@
   font-size: $bigTitleSize;
   font-style: italic;
   color: white;
+  padding: 10px 0;
 }
-.user-info{
-  display: flex;
-  align-items: center;
-}
-.user-avatar{
-  height: 34px;
-}
-.user-name{
-  display: inline-block;
-  max-width: 100px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
