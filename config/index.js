@@ -14,6 +14,10 @@ module.exports = {
       '/user/*': {
         target: 'http://localhost:8000',
         changeOrigin: true
+      },
+      '/strategy/*': {
+        target: 'http://localhost:8000',
+        changeOrigin: true
       }
     },
 

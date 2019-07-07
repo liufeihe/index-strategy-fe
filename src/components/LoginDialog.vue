@@ -80,12 +80,14 @@ export default {
               let result = res.data || {}
               if (result.success) {
                 this.uid = ''
+                this.$route.push('/')
               }
             }, err => {
               console.log(err)
             })
           break
         case 'admin':
+          this.$router.push({name: 'Admin'})
           break
       }
     },
@@ -149,6 +151,7 @@ export default {
     overflow: hidden;
     text-overflow: ellipsis;
     line-height: 34px;
+    color: white;
   }
   span.warning{
     color: red;

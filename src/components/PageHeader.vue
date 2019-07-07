@@ -1,7 +1,7 @@
 <template>
   <div class="page-header">
     <div class="wrapper">
-      <div class="web-title">RichTech</div>
+      <div class="web-title" @click="goHome()">RichTech</div>
       <LoginDialog></LoginDialog>
     </div>
   </div>
@@ -16,6 +16,11 @@ export default {
   },
   components: {
     'LoginDialog': LoginDialog
+  },
+  methods: {
+    goHome: function () {
+      this.$router.push('/')
+    }
   }
 }
 </script>
